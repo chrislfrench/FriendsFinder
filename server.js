@@ -5,7 +5,7 @@ var setupRoutes = require("./app/routing/routes.js");
 var setupHTML = require("./app/routing/html-routes.js");
 
 var app = express();
-var PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
